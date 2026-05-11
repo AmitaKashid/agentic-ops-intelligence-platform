@@ -1,0 +1,4 @@
+incident_id,ticket_id,priority,service,region,status,summary
+INC-9001,TCK-1001,P1,payment-service,EU,open,Payment failures exceed SLA threshold in EU region
+INC-9002,TCK-1003,P2,checkout-service,EU,open,Checkout latency above acceptable threshold
+INC-9003,TCK-1004,P2,database-service,EU,open,Database connection pool errors affecting application stability

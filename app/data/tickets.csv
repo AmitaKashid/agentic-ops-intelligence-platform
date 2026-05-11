@@ -1,0 +1,7 @@
+ticket_id,timestamp,customer_tier,service,region,description,status
+TCK-1001,2026-05-11 09:10:00,enterprise,payment-service,EU,EU customers are reporting payment failures after checkout,open
+TCK-1002,2026-05-11 09:20:00,enterprise,auth-service,EU,Enterprise users cannot log in consistently,open
+TCK-1003,2026-05-11 10:15:00,business,checkout-service,EU,Checkout is very slow for EU customers,open
+TCK-1004,2026-05-11 10:35:00,enterprise,database-service,EU,Application errors increased after database connection warnings,open
+TCK-1005,2026-05-11 11:10:00,standard,notification-service,US,Email notifications are delayed,open
+TCK-1006,2026-05-11 11:45:00,business,search-service,EU,Search results are slower than usual,open

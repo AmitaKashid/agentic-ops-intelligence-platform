@@ -1,0 +1,12 @@
+.venv
+__pycache__
+*.pyc
+.pytest_cache
+agentic_ops.db
+app/data/vector_index
+.git
+.gitignore
+screenshots
+evaluation/results.csv
+evaluation/metrics_summary.json
+evaluation/error_analysis.md

@@ -1,0 +1,19 @@
+services:
+  agentic-ops-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: agentic-ops-api
+    ports:
+      - "8000:8000"
+    environment:
+      - APP_NAME=Agentic Operations Intelligence Platform
+      - APP_VERSION=1.0.0
+      - ENVIRONMENT=docker
+      - DATABASE_URL=sqlite:///./agentic_ops.db
+      - CONFIDENCE_THRESHOLD=0.70
+      - HUMAN_REVIEW_THRESHOLD=0.65
+    volumes:
+      - ./evaluation:/app/evaluation
+      - ./screenshots:/app/screenshots
+    restart: unless-stopped

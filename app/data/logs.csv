@@ -1,0 +1,9 @@
+log_id,timestamp,service,region,level,error_code,message
+L001,2026-05-11 09:02:00,payment-service,EU,ERROR,PAYMENT_GATEWAY_TIMEOUT,Payment provider timeout after 30 seconds during checkout
+L002,2026-05-11 09:04:00,payment-service,EU,ERROR,PAYMENT_GATEWAY_TIMEOUT,Repeated payment authorization failure for EU customers
+L003,2026-05-11 09:06:00,payment-service,EU,WARN,RETRY_LIMIT_REACHED,Payment retry limit reached for multiple checkout sessions
+L004,2026-05-11 09:12:00,auth-service,EU,ERROR,AUTH_TIMEOUT,Authentication timeout for enterprise login request
+L005,2026-05-11 10:05:00,checkout-service,EU,ERROR,CHECKOUT_LATENCY_SPIKE,Checkout latency exceeded 1400ms
+L006,2026-05-11 10:31:00,database-service,EU,ERROR,DB_CONNECTION_POOL_EXHAUSTED,Database connection pool exhausted during peak traffic
+L007,2026-05-11 11:05:00,notification-service,US,INFO,EMAIL_QUEUE_DELAY,Email queue delayed but no customer-facing outage detected
+L008,2026-05-11 11:40:00,search-service,EU,WARN,SEARCH_CACHE_MISS_HIGH,Search cache miss rate elevated

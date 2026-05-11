@@ -1,0 +1,8 @@
+metric_id,service,region,timestamp,error_rate,latency_ms,failed_requests,total_requests,affected_customers,enterprise_customers_affected
+M001,payment-service,EU,2026-05-11 09:00:00,0.187,920,1870,10000,74,12
+M002,payment-service,US,2026-05-11 09:00:00,0.041,430,410,10000,14,2
+M003,auth-service,EU,2026-05-11 09:00:00,0.072,510,720,10000,33,5
+M004,checkout-service,EU,2026-05-11 10:00:00,0.121,1420,1210,10000,51,8
+M005,database-service,EU,2026-05-11 10:30:00,0.096,1800,960,10000,46,7
+M006,notification-service,US,2026-05-11 11:00:00,0.026,280,260,10000,9,1
+M007,search-service,EU,2026-05-11 11:30:00,0.034,690,340,10000,17,3

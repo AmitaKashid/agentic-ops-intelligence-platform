@@ -1,0 +1,12 @@
+{
+  "total_cases": 30,
+  "task_classification_accuracy": 0.8,
+  "tool_routing_exact_accuracy": 0.7333,
+  "average_tool_overlap_score": 0.8472,
+  "human_review_accuracy": 0.6333,
+  "priority_accuracy": 1.0,
+  "decision_accuracy": 0.6,
+  "average_confidence": 0.5967,
+  "average_latency_ms": 153.62,
+  "p95_latency_ms": 71.27
+}

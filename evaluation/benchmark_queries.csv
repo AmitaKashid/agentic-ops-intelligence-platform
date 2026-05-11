@@ -1,0 +1,31 @@
+id,query,ticket_id,expected_task_type,expected_tools,expected_human_review,expected_priority,expected_decision
+1,"EU customers are reporting payment failures after checkout. Should this be escalated?",TCK-1001,escalation_decision,"sql_tool;log_search_tool;rag_tool;rule_validator",false,P1,ESCALATE
+2,"Enterprise users in EU cannot log in consistently. Should this be escalated?",TCK-1002,escalation_decision,"sql_tool;log_search_tool;rag_tool;rule_validator",false,,ESCALATE
+3,"Checkout is very slow in EU. Should this be escalated?",TCK-1003,escalation_decision,"sql_tool;log_search_tool;rag_tool;rule_validator",false,P2,ESCALATE
+4,"Application errors increased after database connection warnings. Should this be escalated?",TCK-1004,escalation_decision,"sql_tool;log_search_tool;rag_tool;rule_validator",false,P2,ESCALATE
+5,"Email notifications are delayed in the US. Should this be escalated?",TCK-1005,escalation_decision,"sql_tool;log_search_tool;rag_tool;rule_validator",false,P3,NO_ESCALATION
+6,"What is the payment failure rate in EU?",,sql_lookup,"sql_tool",false,,NO_ESCALATION
+7,"How many affected customers does checkout-service have in EU?",,sql_lookup,"sql_tool",false,,NO_ESCALATION
+8,"Show the latency for database-service in EU.",,sql_lookup,"sql_tool",false,,NO_ESCALATION
+9,"What is the error rate for auth-service in EU?",,sql_lookup,"sql_tool",false,,NO_ESCALATION
+10,"How many failed requests happened for payment-service in US?",,sql_lookup,"sql_tool",false,,NO_ESCALATION
+11,"Find timeout errors for payment-service in EU logs.",,log_analysis,"log_search_tool",false,,NO_ESCALATION
+12,"Search logs for AUTH_TIMEOUT in EU.",,log_analysis,"log_search_tool",false,,NO_ESCALATION
+13,"Find database connection pool errors.",,log_analysis,"log_search_tool",false,,NO_ESCALATION
+14,"Show checkout latency spike logs.",,log_analysis,"log_search_tool",false,,NO_ESCALATION
+15,"Find notification delay logs in US.",,log_analysis,"log_search_tool",false,,NO_ESCALATION
+16,"What does the SLA policy say about payment failure escalation?",,policy_lookup,"rag_tool",false,,NO_ESCALATION
+17,"What does the escalation policy say about P1 incidents?",,policy_lookup,"rag_tool",false,,NO_ESCALATION
+18,"What does the payment runbook recommend for gateway timeouts?",,policy_lookup,"rag_tool",false,,NO_ESCALATION
+19,"What does the database incident runbook say about connection pool exhaustion?",,policy_lookup,"rag_tool",false,,NO_ESCALATION
+20,"What does the customer impact policy say about enterprise customers?",,policy_lookup,"rag_tool",false,,NO_ESCALATION
+21,"Something seems wrong with the application.",,ambiguous,"human_review_tool",true,,HUMAN_REVIEW
+22,"The system feels broken.",,ambiguous,"human_review_tool",true,,HUMAN_REVIEW
+23,"There is an issue but I do not know where.",,ambiguous,"human_review_tool",true,,HUMAN_REVIEW
+24,"Something is not working.",,ambiguous,"human_review_tool",true,,HUMAN_REVIEW
+25,"Users are complaining but there is no clear service name.",,investigation,"sql_tool;log_search_tool;rag_tool",true,,HUMAN_REVIEW
+26,"Compare payment-service and checkout-service impact.",,comparison,"sql_tool;rag_tool",false,,NO_ESCALATION
+27,"Compare the escalation policy and SLA policy for customer-facing incidents.",,comparison,"sql_tool;rag_tool",false,,NO_ESCALATION
+28,"Summarize the login incident runbook.",,summarization,"rag_tool",false,,NO_ESCALATION
+29,"Give me an overview of the payment incident runbook.",,summarization,"rag_tool",false,,NO_ESCALATION
+30,"Explain the database incident runbook.",,summarization,"rag_tool",false,,NO_ESCALATION
