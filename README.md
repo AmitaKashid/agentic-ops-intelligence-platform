@@ -287,12 +287,7 @@ Expected result:
 
 ## Screenshots
 
-Recommended screenshots:
 
-```markdown
-## Screenshots
-
-```markdown
 ![Swagger UI](screenshots/swagger_ui.png)
 
 ![Analyze Ticket Response](screenshots/analyze_ticket_response.png)
@@ -351,13 +346,5 @@ integration with Jira, ServiceNow, Datadog, or Grafana
 
 ---
 
-## Resume Summary
-
-```latex
-\textbf{Agentic Operations Intelligence Platform} \hfill Python, FastAPI, LangGraph, SQLAlchemy, FAISS, Docker
-\begin{itemize}
-  \item Built an enterprise-style agentic AI backend for operational ticket triage, routing requests across SQL analytics, document retrieval, log search, rule-based escalation validation, and human-review workflows.
-  \item Implemented LangGraph orchestration with evidence verification, confidence scoring, fallback handling, tool-call traces, and audit-style decision logs for explainable recommendations.
-  \item Evaluated the system on benchmark incident scenarios using task classification accuracy, tool-routing accuracy, escalation-decision accuracy, human-review detection, latency, and failure-category analysis.
 \end{itemize}
 ```
